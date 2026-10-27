@@ -110,9 +110,8 @@ a { color: inherit; }
 /* ---------- hero (marquee) ---------- */
 .hero { padding-block: var(--space-2xl) var(--space-xl); }
 .hero__title {
-  font-size: var(--text-display);
+  font-size: clamp(2.5rem, 7vw, 6rem);
   line-height: 0.98; letter-spacing: -0.04em;
-  max-width: 11ch;
 }
 .hero__title u {
   text-decoration: underline; text-decoration-color: var(--color-accent);
