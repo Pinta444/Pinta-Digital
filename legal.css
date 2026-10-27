@@ -1,0 +1,23 @@
+/* Legal pages (privacy, cookies). Loaded after tokens.css + styles.css. */
+.legal { padding-block: var(--space-2xl) var(--space-3xl); }
+.legal__wrap { max-width: 46rem; }
+.legal h1 { font-size: var(--text-2xl); margin-bottom: var(--space-md); }
+.legal__meta { color: var(--color-ink-muted); font-size: var(--text-sm); margin-bottom: var(--space-xl); }
+.legal h2 { font-size: var(--text-lg); margin: var(--space-2xl) 0 var(--space-md); }
+.legal h3 { font-size: var(--text-md); margin: var(--space-xl) 0 var(--space-sm); }
+.legal p { margin-bottom: var(--space-md); }
+.legal ul { list-style: disc; padding-left: var(--space-lg); margin-bottom: var(--space-md); }
+.legal li { margin-bottom: var(--space-sm); }
+.legal a { color: var(--color-accent); }
+.legal a:hover { color: var(--color-accent-hover); }
+
+.legal__table { width: 100%; border-collapse: collapse; margin-bottom: var(--space-lg); font-size: var(--text-sm); }
+.legal__table th, .legal__table td { text-align: left; vertical-align: top; padding: var(--space-sm) var(--space-md) var(--space-sm) 0; border-bottom: var(--rule-hair) solid var(--color-rule); }
+.legal__table th { font-weight: 600; }
+.legal__table ul { margin: 0; }
+@media (max-width: 40rem) {
+  .legal__table, .legal__table tbody, .legal__table tr, .legal__table th, .legal__table td { display: block; }
+  .legal__table thead { position: absolute; left: -9999px; }
+  .legal__table th, .legal__table td { border: 0; padding-right: 0; }
+  .legal__table tr { border-bottom: var(--rule-hair) solid var(--color-rule); padding-bottom: var(--space-sm); margin-bottom: var(--space-sm); }
+}
